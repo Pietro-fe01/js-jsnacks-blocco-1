@@ -11,4 +11,8 @@ for (i=1; i<=6; i++){
     }
 }
 
-console.log(list);
+if (list.length === 0){
+    console.log("Non sono stati inseriti numeri dispari.");
+} else {
+    console.log(`I numeri dispari inseriti sono: ${list}`);
+}

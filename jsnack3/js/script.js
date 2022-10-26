@@ -1,15 +1,12 @@
-// L’utente inserisce due parole in successione, con due prompt.
-// Il software stampa prima la parola più corta, poi la 
-// parola più lunga.
-
-const wordOne = prompt("Inserisci la prima parola");
-
-const wordSecond = prompt("Inserisci la seconda parola");
-
-if (wordOne.length < wordSecond.length){
-    console.log(wordOne + " / " + wordSecond);
-} else if (wordSecond.length < wordOne.length){
-    console.log(wordSecond + " / " + wordOne);
-} else {
-    console.log("Le parole hanno la stessa lunghezza");
+// Il software deve chiedere per 10 volte all’utente di
+// inserire un numero.
+// Il programma stampa la somma di tutti i numeri inseriti.
+let sum = 0;
+console.log("Numeri inseriti:");
+for (let i = 1; i<=10; i++){
+    const num = Number(prompt("Inserisci un numero"));
+    console.log(num);
+    sum = sum + num;
 }
+
+console.log(`La somma di tutti i numeri inseriti è ${sum}`);
